@@ -9,9 +9,9 @@ const path = require('path');
 
 // Tells node that we are creating an "express" server
 const app = express();
-app.get('/', function (req, res){
-  res.send('Hello 729')
-})
+//app.get('/', function (req, res){
+  //res.send('Hello 729')
+//})
 
 // Sets an initial port. We"ll use this later in our listener
 const PORT = process.env.PORT || 8080;
@@ -24,7 +24,7 @@ app.use(express.json());
 // The below points our server to a series of "route" files.
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
 
-require('./routing/api-routes')(app);
+//require('./routing/api-routes')(app);
 require('./routing/html-routes')(app);
 
 // LISTENER
